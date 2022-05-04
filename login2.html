@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./loin2.css">
+    <title> login/signup page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f411cc5e95.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="add">
+
+            <div class="content">
+                <p class="p1">NEW ARRIVALS</p>
+                <p class="p2">JUST </p>
+                <p class="p3">you</p>
+                <p class="p4">F O R</p>
+                <h1 class="back"></h1>
+            </div>
+            <img src="./picture.png" class="image">
+        </div>
+        <div class="userpsat">
+            <div class="headerup">
+                <div>
+                    <img class="sanicon" src="./icon.svg">
+                </div>
+                <pre class="head1"> <b class="h1">SAN</b><span class="h11"> LIFESTYLE.</span></pre>
+            </div>
+            <div class="tab">
+                <button class="signintab" id="signinTab" onclick="changeTab('SignIn')">Sign in</button>
+                <button class="signuptab" id="signupTab" onclick="changeTab('SignUp')">Sign up</button>
+            </div>
+            <div class="content">
+                <form id="signinde">
+                    <div class="user1">
+                        <input type="text" id="idusername" class="username" placeholder="Enter your username" required>
+                        <img src="./user.svg" class="usericon">
+                    </div>
+                    <div class="pass1">
+                        <input type="password" id="idpassword1" class="password1" pattern="(?=.*[A-Z]).{8,}" title="Must contain one uppercase and at least 8 or more characters " placeholder="Enter your password" required>
+                        <img src="./unlock.svg" alt="icon" class="passicon">
+                        <span class="eyeicon0">
+                            <i class="fa-solid fa-eye" onclick="visibel0()"></i>
+                        </span>
+                    </div>
+                    <div class="finel">
+                        <input type="checkbox" id="idcheckbox" class="checkbox">
+                        <p class="forgot">Remember&nbsp;Me</p>
+                        <a href="#." class="forget">Forgot&nbsp;password?</a>
+                        <button class="submitin" onclick="funsignin()"> SIGN IN</button>
+                    </div>
+                    <div class="New">
+                        <a href="#a" class="create">New&nbsp;on&nbsp;our&nbsp;platform?&nbsp;Create&nbsp;an&nbsp;account?</a>
+                    </div>
+                </form>
+                <form id="signupde" name="signupform">
+                    <div class="user2">
+                        <input type="text" value="Nikkel" name="username2" id="idusername2" class="username2" placeholder="Enter your username" required>
+                        <img src="./user.svg" class="usericon2">
+                    </div>
+                    <div class="emailpart">
+                        <input type="text" id="idemail" value="nikkel@agiratech.com" name="emailid" class="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="please enter your email address" placeholder="Enter your email" required>
+                        <img src="./envelope-solid.svg" class="emailicon">
+                    </div>
+                    <div class="phone">
+                        <input type="text" name="phonenumber" value="9876543210" id="idphonenumber" class="phonenumber" maxlength="10" pattern="[0-9]{10}" title="Ten digits code" placeholder="Enter your phone" required>
+                        <img src="./pngtree-telephone-glyph-icon-vector-png-image_5199512.png" class="phoneicon">
+                    </div>
+                    <div class="pass2">
+                        <input type="password" name="password" id="idpassword2" pattern="(?=.*[A-Z]).{8,}" title="Must contain one uppercase and at least 8 or more characters " class="password2 " placeholder="Enter your password " required>
+                        <img src="./unlock.svg " alt="icon " class="passicon2 " onclick="visibel() ">
+                        <span class="eyeicon ">
+                            <i class="fa-solid fa-eye " onclick="visibel() "></i>
+                        </span>
+                    </div>
+                    <div class="pass3 ">
+                        <input type="password" name="confirmpassword" id="idpassword3" class="password3 " placeholder="confirm your password">
+                        <img src="./unlock.svg " alt="icon " class="passicon3 " id="idpassicon3 " onclick="visibel1() ">
+                        <span class="eyeicon2 ">
+                            <i class="fa-solid fa-eye " onclick="visibel1() "></i>
+                        </span>
+                    </div>
+                    <div class="finel2 ">
+                        <div>
+                            <button class="submitin1" onclick="funsignun()">SIGN UP</button>
+                        </div>
+                        <div class="Alerady ">
+                            <a href="#a " class="create2 ">Already&nbsp;have&nbsp;an&nbsp;account?<span class="span2 ">&nbsp;sign&nbsp;in&nbsp;instead</span></a>
+                        </div>
+                    </div>
+                </form>
+                <div class="footed ">
+                    <div class="option ">
+                        <section class="line "></section>
+                        <p class="or ">&nbsp;Or&nbsp;</p>
+                        <section class="line2 "></section>
+                    </div>
+                    <div class=" logoinimport ">
+                        <p class="text ">With&nbsp;Your&nbsp;social&nbsp;network</p>
+                        <div class="socialnetwork ">
+                            <img src="./google.png " alt="logo " class="google ">
+                            <img src="./fb.png " alt="logo " class="fb ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./login2.js "></script>
+</body>
+
+</html>
